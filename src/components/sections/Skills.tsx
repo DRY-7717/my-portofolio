@@ -1,9 +1,9 @@
-import { 
-  Code, 
-  Database, 
-  Server, 
-  Monitor, 
-  GitBranch, 
+import {
+  Code,
+  Database,
+  Server,
+  Monitor,
+  GitBranch,
   Settings,
   Container,
   Laptop
@@ -20,12 +20,12 @@ const Skills = () => {
     {
       icon: Server,
       title: "Backend",
-      color: "secondary", 
+      color: "secondary",
       skills: ["PHP", "CodeIgniter", "Laravel", "Golang", ".NET (Dotnet)", "RESTful API"]
     },
     {
       icon: Database,
-      title: "Database", 
+      title: "Database",
       color: "accent",
       skills: ["SQL Server", "MySQL", "PostgreSQL", "Supabase"]
     },
@@ -44,7 +44,7 @@ const Skills = () => {
     {
       icon: Container,
       title: "DevOps/Tools",
-      color: "accent", 
+      color: "accent",
       skills: ["Docker"]
     }
   ];
@@ -61,7 +61,7 @@ const Skills = () => {
       case 'secondary':
         return {
           gradient: 'bg-gradient-secondary',
-          glow: 'glow-secondary', 
+          glow: 'glow-secondary',
           text: 'text-secondary',
           border: 'border-secondary/20'
         };
@@ -69,7 +69,7 @@ const Skills = () => {
         return {
           gradient: 'bg-gradient-accent',
           glow: 'glow-accent',
-          text: 'text-accent', 
+          text: 'text-accent',
           border: 'border-accent/20'
         };
       default:
@@ -77,7 +77,7 @@ const Skills = () => {
           gradient: 'bg-gradient-primary',
           glow: 'glow-primary',
           text: 'text-primary',
-          border: 'border-primary/20'  
+          border: 'border-primary/20'
         };
     }
   };
@@ -94,18 +94,18 @@ const Skills = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8" />
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Technologies and tools I use to bring ideas to life
+              Teknologi dan tools yang biasa saya gunakan
             </p>
           </div>
-          
+
           {/* Skills Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, index) => {
               const Icon = category.icon;
               const colors = getColorClasses(category.color);
-              
+
               return (
-                <div 
+                <div
                   key={index}
                   className={`bg-gradient-card p-6 rounded-2xl border ${colors.border} shadow-card hover-glow group cursor-pointer animate-fade-in`}
                   style={{ animationDelay: `${index * 0.1}s` }}
@@ -119,11 +119,11 @@ const Skills = () => {
                       {category.title}
                     </h3>
                   </div>
-                  
+
                   {/* Skills List */}
                   <div className="space-y-3">
                     {category.skills.map((skill, skillIndex) => (
-                      <div 
+                      <div
                         key={skillIndex}
                         className="flex items-center gap-3 p-2 rounded-lg bg-background/50 hover:bg-background/80 transition-colors group/skill"
                       >
@@ -134,7 +134,7 @@ const Skills = () => {
                       </div>
                     ))}
                   </div>
-                  
+
                   {/* Skill Count Badge */}
                   <div className="mt-6 pt-4 border-t border-border">
                     <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-${category.color}/10 to-${category.color}/5 border ${colors.border}`}>

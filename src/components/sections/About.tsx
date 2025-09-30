@@ -5,17 +5,17 @@ const About = () => {
     {
       icon: Code,
       title: "Clean Code",
-      description: "Writing maintainable, scalable, and efficient code"
+      description: "Menulis kode yang bersih, mudah dirawat, dan efisien"
     },
     {
       icon: Zap,
       title: "Performance",
-      description: "Optimizing applications for speed and user experience"
+      description: "Fokus pada optimasi aplikasi agar cepat dan nyaman digunakan"
     },
     {
       icon: Heart,
       title: "Passion",
-      description: "Love for learning new technologies and solving complex problems"
+      description: "Suka banget belajar hal-hal baru di teknologi dan nyari solusi buat masalah rumit"
     }
   ];
 
@@ -31,7 +31,7 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8" />
           </div>
-          
+
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Story */}
@@ -40,34 +40,26 @@ const About = () => {
                 <h3 className="text-2xl font-orbitron font-semibold mb-6 text-gradient-primary">
                   My Developer Journey
                 </h3>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>
-                    I'm a passionate <span className="text-primary font-semibold">Fullstack & Backend Developer</span> with 
-                    a deep love for creating innovative web solutions. My journey in software development began with 
-                    curiosity about how applications work behind the scenes.
+                    Saya seorang Fullstack & Backend Developer yang suka banget bikin solusi web yang kreatif dan bermanfaat. Awalnya saya tertarik sama dunia programming karena penasaran gimana sih aplikasi bisa jalan di balik layar.
                   </p>
                   <p>
-                    With experience across multiple technology stacks, I specialize in building robust backend systems 
-                    and intuitive frontend interfaces. From <span className="text-secondary font-semibold">PHP frameworks</span> like 
-                    Laravel and CodeIgniter to modern <span className="text-accent font-semibold">Golang</span> and 
-                    <span className="text-primary font-semibold"> .NET applications</span>, I enjoy tackling complex 
-                    challenges and turning ideas into reality.
+                    Sekarang, saya fokus bikin sistem backend yang kuat sekaligus antarmuka yang enak dipakai. Buat saya, tantangan yang rumit justru seru karena bisa ngubah ide jadi sesuatu yang nyata.
                   </p>
                   <p>
-                    I believe in writing clean, maintainable code and staying updated with the latest industry trends. 
-                    My goal is to contribute to meaningful projects that make a positive impact while continuously 
-                    growing as a developer.
+                    Saya percaya bikin kode itu harus rapi, gampang dirawat, dan selalu update sama perkembangan terbaru. Harapan saya, bisa terlibat di proyek-proyek yang punya dampak positif sekaligus bikin saya terus berkembang sebagai developer.
                   </p>
                 </div>
               </div>
             </div>
-            
+
             {/* Highlights */}
             <div className="space-y-6 animate-slide-in-right">
               {highlights.map((item, index) => {
                 const Icon = item.icon;
                 return (
-                  <div 
+                  <div
                     key={index}
                     className="flex items-start gap-4 p-6 bg-gradient-card rounded-xl border border-card-border hover-glow group cursor-pointer"
                     style={{ animationDelay: `${index * 0.2}s` }}

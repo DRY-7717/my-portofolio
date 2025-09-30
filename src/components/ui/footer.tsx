@@ -7,19 +7,19 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/bima-arya",
+      href: "https://github.com/DRY-7717",
       label: "GitHub",
       color: "primary"
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/bima-arya",
-      label: "LinkedIn", 
+      href: "https://www.linkedin.com/in/bima-arya-wicaksana-b233a8249/",
+      label: "LinkedIn",
       color: "secondary"
     },
     {
       icon: Mail,
-      href: "mailto:bima.arya@example.com",
+      href: "mailto:wicaksanabimaarya01@gmail.com",
       label: "Email",
       color: "accent"
     }
@@ -44,7 +44,7 @@ const Footer = () => {
     <footer className="relative py-16 border-t border-border">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-hero opacity-20" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand Section */}
@@ -54,12 +54,10 @@ const Footer = () => {
                 Bima Arya Wicaksana
               </h3>
               <p className="text-muted-foreground leading-relaxed max-w-md">
-                Fullstack & Backend Developer passionate about creating 
-                innovative web solutions with modern technologies. 
-                Always ready for new challenges and opportunities.
+                Fullstack & Backend Developer dengan passion menciptakan solusi web inovatif menggunakan teknologi modern. Selalu siap menghadapi tantangan dan peluang baru.
               </p>
             </div>
-            
+
             {/* Social Links */}
             <div className="flex gap-4">
               {socialLinks.map((social, index) => {
@@ -80,7 +78,7 @@ const Footer = () => {
               })}
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-orbitron font-semibold mb-4 text-primary">
@@ -103,7 +101,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          
+
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-orbitron font-semibold mb-4 text-secondary">
@@ -112,16 +110,16 @@ const Footer = () => {
             <div className="space-y-3 text-muted-foreground">
               <div>
                 <p className="font-medium text-foreground">Email</p>
-                <a 
-                  href="mailto:bima.arya@example.com"
+                <a
+                  href="mailto:wicaksanabimaarya01@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
-                  bima.arya@example.com
+                  wicaksanabimaarya01@gmail.com
                 </a>
               </div>
               <div>
                 <p className="font-medium text-foreground">Location</p>
-                <p>Jakarta, Indonesia</p>
+                <p>Depok, Indonesia</p>
               </div>
               <div>
                 <p className="font-medium text-foreground">Status</p>
@@ -133,7 +131,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Bottom Section */}
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -142,7 +140,7 @@ const Footer = () => {
                 © {currentYear} Bima Arya Wicaksana. All rights reserved.
               </p>
             </div>
-            
+
             <div className="flex items-center gap-2 text-muted-foreground">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-500 animate-pulse" />

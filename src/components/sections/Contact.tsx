@@ -3,14 +3,14 @@ import { HeroButton } from "@/components/ui/hero-button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { 
-  Mail, 
-  Github, 
-  Linkedin, 
-  Send, 
-  MapPin, 
+import {
+  Mail,
+  Github,
+  Linkedin,
+  Send,
+  MapPin,
   Phone,
-  MessageCircle 
+  MessageCircle
 } from "lucide-react";
 
 const Contact = () => {
@@ -34,7 +34,7 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       toast({
@@ -50,22 +50,22 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "bima.arya@example.com",  
-      href: "mailto:bima.arya@example.com",
+      value: "wicaksanabimaarya01@gmail.com",
+      href: "mailto:wicaksanabimaarya01@gmail.com",
       color: "primary"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/bima-arya",
-      href: "https://github.com/bima-arya",
+      value: "github.com/DRY-7717",
+      href: "https://github.com/DRY-7717",
       color: "secondary"
     },
     {
       icon: Linkedin,
-      label: "LinkedIn", 
-      value: "linkedin.com/in/bima-arya",
-      href: "https://linkedin.com/in/bima-arya",
+      label: "LinkedIn",
+      value: "linkedin.com/in/bima-arya-wicaksana-b233a8249",
+      href: "https://www.linkedin.com/in/bima-arya-wicaksana-b233a8249/",
       color: "accent"
     }
   ];
@@ -85,7 +85,7 @@ const Contact = () => {
               Ready to work together? Let's discuss your next project
             </p>
           </div>
-          
+
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="animate-slide-in-left">
@@ -98,7 +98,7 @@ const Contact = () => {
                     Send Message
                   </h3>
                 </div>
-                
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
@@ -132,7 +132,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
                       Subject
@@ -148,7 +148,7 @@ const Contact = () => {
                       className="bg-background/50 border-primary/20 focus:border-primary"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                       Message
@@ -164,11 +164,11 @@ const Contact = () => {
                       className="bg-background/50 border-primary/20 focus:border-primary resize-none"
                     />
                   </div>
-                  
-                  <HeroButton 
-                    type="submit" 
-                    variant="primary" 
-                    size="lg" 
+
+                  <HeroButton
+                    type="submit"
+                    variant="primary"
+                    size="lg"
                     className="w-full"
                     disabled={isSubmitting}
                   >
@@ -179,15 +179,17 @@ const Contact = () => {
                       </div>
                     ) : (
                       <>
-                        <Send className="w-5 h-5 mr-2" />
-                        Send Message
+                        <div className="flex items-center">
+                          <Send className="w-5 h-5 mr-2" />
+                          Send Message
+                        </div>
                       </>
                     )}
                   </HeroButton>
                 </form>
               </div>
             </div>
-            
+
             {/* Contact Info */}
             <div className="animate-slide-in-right">
               <div className="space-y-6">
@@ -220,7 +222,7 @@ const Contact = () => {
                     </a>
                   );
                 })}
-                
+
                 {/* Additional Info */}
                 <div className="bg-gradient-card p-6 rounded-2xl border border-card-border shadow-card">
                   <div className="flex items-center gap-4 mb-4">
@@ -232,16 +234,14 @@ const Contact = () => {
                         Location
                       </h4>
                       <p className="text-muted-foreground">
-                        Jakarta, Indonesia
+                        Depok, Indonesia
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="pt-4 border-t border-border">
-                    <p className="text-muted-foreground leading-relaxed">
-                      Available for remote work and collaboration. 
-                      Open to exciting opportunities in web development 
-                      and software engineering.
+                    <p className="text-muted-foreground leading-relaxed text-justify">
+                      Siap untuk bekerja secara remote dan berkolaborasi, serta terbuka terhadap kesempatan baru di dunia web development dan software engineering.
                     </p>
                   </div>
                 </div>
