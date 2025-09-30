@@ -122,12 +122,14 @@ const Navigation = () => {
                     </a>
                   ))}
                   <div className="pt-4">
-                    <HeroButton variant="primary" size="sm" className="w-full">
-                      <div className="flex">
-                        <Download className="w-4 h-4 mr-2" />
-                        Download Resume
-                      </div>
-                    </HeroButton>
+                    <a href={cv} download="CV Bima Arya Wicaksana">
+                      <HeroButton variant="primary" size="sm" className="w-full">
+                        <div className="flex">
+                          <Download className="w-4 h-4 mr-2" />
+                          Download Resume
+                        </div>
+                      </HeroButton>
+                    </a>
                   </div>
                 </div>
               </div>
